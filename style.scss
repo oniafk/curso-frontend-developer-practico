@@ -83,7 +83,7 @@ nav{
     align-items: center;
 }
 //mini-menu desktop right side
-.desktop-menu{
+.desktop-menu {
     position: absolute;
     top: 60px;
     right: 30px;
@@ -130,7 +130,8 @@ nav{
     top: 60px;
     left: 0px;
     padding: 24px;
-    transition: transform 300ms;
+    background-color: $white;
+    transition: transform 600ms;
 }
 .hide-menu{    
     transform: translateX(-200px);
@@ -162,6 +163,90 @@ nav{
     color: $hospital-green !important;
 }
 
+// side menu checkout
+
+.product-detail {
+    width: 360px;
+    padding: 0 24px;
+    background-color: $white;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 61px;
+    transition: transform 600ms;
+}
+.hide-menu-cart{
+    transform: translateX(436px);
+    transition: transform 400ms cubic-bezier(.59,1.14,.85,.96);
+}
+.title-container {
+    display: flex;
+}
+.title-container img{
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
+.title {
+    font-size: $lg;
+    font-weight: bold;
+}
+.order {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: $text-input-field;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+.order p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+.order p span:nth-child(1) {
+    font-size: $md;
+    font-weight: bold;
+}
+.order p:nth-child(2) {
+    text-align: end;
+    font-weight: bold;
+}
+.shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+.shopping-cart figure {
+    margin: 0;
+}
+.shopping-cart figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.shopping-cart p:nth-child(2) {
+    color: $very-light-pink;
+}
+.shopping-cart p:nth-child(3) {
+    font-size: $md;
+    font-weight: bold;
+}
+.primary-button {
+    background-color: $hospital-green;
+    border-radius: 8px;
+    border: none;
+    color: $white;
+    width: 100%;
+    cursor: pointer;
+    font-size: $md;
+    font-weight: bold;
+    height: 50px;
+}
+
 @media (max-width: 640px) {
     .menu {
       display: block;
@@ -174,6 +259,13 @@ nav{
     }
     .desktop-menu{
         display: none;
+    }
+    .product-detail {
+        width: 100%;
+    }
+    .hide-menu-cart{
+        transform: translateX(634px);
+        transition: transform 400ms cubic-bezier(.59,1.14,.85,.96);
     }
 }
 @media (min-width: 641px) {

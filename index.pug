@@ -35,7 +35,7 @@ html(lang="en")
                     li.navbar-shopping-cart 
                         img(src="./icons/icon_shopping_cart.svg", alt="shopping cart")
                         div 2
-            .desktop-menu.hide-mini-menu
+            .desktop-menu.inactive
                 ul
                     li
                         a(href="/" class="title") My orders
@@ -69,4 +69,37 @@ html(lang="en")
                         a(href="/" class="email") platzi@example.com
                     li
                         a(href="/" class="sign-out") Sign out
+            aside.product-detail.hide-menu-cart
+                .title-container
+                    img(src="./icons/flechita.svg", alt="arrow" )
+                    p.title My order
+                .my-order-content
+                    .shopping-cart
+                        figure
+                            img(src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="bike")
+                        p Bike
+                        p $30.00
+                        img(src="./icons/icon_close.png", alt="close")
+
+                    .shopping-cart
+                        figure
+                            img(src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="bike")
+                        p Bike
+                        p $30.00
+                        img(src="./icons/icon_close.png", alt="close")
+
+                    .shopping-cart
+                        figure
+                            img(src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="bike")
+                        p Bike
+                        p $30.00
+                        img(src="./icons/icon_close.png", alt="close")
+
+                    .order
+                        p
+                            span Total
+                        p $560.00
+                    
+                    button.primary-button Checkout
+               
         script(src="./script.js") 
