@@ -35,7 +35,7 @@ html(lang="en")
                     li.navbar-shopping-cart 
                         img(src="./icons/icon_shopping_cart.svg", alt="shopping cart")
                         div 2
-            .desktop-menu.inactive
+            .desktop-menu.hide-mini-menu
                 ul
                     li
                         a(href="/" class="title") My orders
@@ -43,4 +43,30 @@ html(lang="en")
                         a(href="/") My account
                     li
                         a(href="/") Sign out
+            .mobile-menu.hide-menu
+                ul
+                    li
+                        a(href="/") Categories
+                    li
+                        a(href="/") All
+                    li
+                        a(href="/") Clothes
+                    li
+                        a(href="/") Electronics
+                    li
+                        a(href="/") Furnitures
+                    li
+                        a(href="/") Toys
+                    li
+                        a(href="/") Other
+                ul
+                    li
+                        a(href="/") My orders
+                    li
+                        a(href="/") Myaccount
+                ul
+                    li
+                        a(href="/" class="email") platzi@example.com
+                    li
+                        a(href="/" class="sign-out") Sign out
         script(src="./script.js") 
